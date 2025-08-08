@@ -1,15 +1,22 @@
- ---
+---
 layout: default
 ---
 
 <div class="home">
   <h1>Witaj na moim blogu</h1>
   
-  <h2>Najnowsze wpisy:</h2>
-  {% for post in site.posts %}
-    <div class="post-preview">
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p><small>{{ post.date | date: "%B %d, %Y" }}</small></p>
-    </div>
-  {% endfor %}
+  <p>Debug: Liczba postów: {{ site.posts.size }}</p>
+  
+  {% if site.posts.size > 0 %}
+    <h2>Najnowsze wpisy:</h2>
+    {% for post in site.posts %}
+      <div class="post-preview">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p><small>{{ post.date | date: "%B %d, %Y" }}</small></p>
+        <p>Debug - URL: {{ post.url }}</p>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>Brak postów lub problem z konfiguracją Jekyll</p>
+  {% endif %}
 </div>
