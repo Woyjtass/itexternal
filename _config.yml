@@ -10,3 +10,5 @@ plugins:
   - jekyll-sitemap
 
 permalink: /:year/:month/:day/:title/ 
+show_drafts: false
+future: false
