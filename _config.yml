@@ -1,1 +1,12 @@
- 
+title: Mój Blog
+description: Blog na GitHub Pages
+url: "https://woyjtass.github.io"
+baseurl: "/itexternal"
+
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+permalink: /:year/:month/:day/:title/ 
