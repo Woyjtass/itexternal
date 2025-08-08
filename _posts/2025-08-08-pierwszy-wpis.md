@@ -1,1 +1,1 @@
-Najbardziej pierwszy z pierwszysch wpisó bloga 
+Najbardziej pierwszy z pierwszysch wpisów bloga 
